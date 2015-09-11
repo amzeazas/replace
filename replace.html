@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-1.11.3.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Replacinator</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to the Replacinator!</h1>
+    <h3>Go ahead and enter in a sentence of your choosing. Don't like what you wrote? Well, the Replacinator will replace a word of your choosing with another word you like!</h3>
+    <form id="sentence">
+      <label for="text">Enter your sentence:</label>
+      <br>
+      <textarea class="form-control" id="text" required></textarea>
+      <br>
+      <button type="submit" class="btn btn-info">Submit!</button>
+    </form>
+    <br>
+    <div id="replace">
+      <form id="replace">
+        <div class="form-group">
+          <label for="old">Enter the word you would like replaced:</label>
+          <input id="old" type="text" required>
+        </div>
+        <div class="form-group"
+          <label for="new">Enter the new word you want to replace it:</label><br>
+          <input id="new" type="text" required>
+        </div>
+        <br>
+        <button type="submit" class="btn btn-success">Replace!</button>
+      </form>
+    </div>
+    <div id="result">
+      <p>Here are your results:</p>
+      <br>
+      <p><span class="output"></span></p>
+    </div>
+  </div>
+</body>
+</html>
