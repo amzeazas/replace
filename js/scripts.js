@@ -12,7 +12,8 @@ $(document).ready(function() {
       var old = $("input#old").val();
       var replacement = $("input#replacement").val();
       var newText = $(".output").text();
-      var result = newText.replace(old, replacement);
+      var re = new RegExp(old, "g")
+      var result = newText.replace(re, replacement);
 
       $(".output").text(result)
 
